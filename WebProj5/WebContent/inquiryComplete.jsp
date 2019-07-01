@@ -12,7 +12,36 @@
 <body>
 
 <table>
-<tbody></tbody>
+<tbody>
+<tr>
+<th>名前<th>
+<th>お問い合わせの種類<th>
+<th>お問い合わせ内容<th>
+</th>
+
+<s:iterator value="inquiryDTOList">
+<tr>
+
+<td><s:property value="name" /></td>
+
+<s:if test='qtype=="company"'>
+<td>会社について</td>
+</s:if>
+
+<s:if test='qtype=="product"'>
+<td>製品について</td>
+</s:if>
+
+<s:if test='qtype=="support"'>
+<td>アフターサポートについて</td>
+</s:if>
+
+<td><s:property value="body" /></td>
+
+</tr>
+</s:iterator>
+
+</tbody>
 
 </table>
 
