@@ -64,9 +64,10 @@ table {
    </div>
 
    <div id="main">
-   <div id="top">
-   <p>UserCreate</p>
-   </div>
+         <div id="top">
+         <p>UserCreate</p>
+         </div>
+         <div>
      <s:if test="errorMessage != ">
               <s:property value="errorMessage" escape="false" />
               </s:if>
@@ -112,5 +113,6 @@ table {
               <div id="pr">
               </div>
               </div>
+
 </body>
 </html>
